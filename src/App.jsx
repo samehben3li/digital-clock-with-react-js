@@ -93,7 +93,7 @@ function App() {
   const [hour,setHour] = useState(12)
   const [minute,setMinute] = useState(12)
   const [seconde,setSeconde] = useState(12)
-  const [value,setValue] = useState([1,2,3,4,5,6,7,8,9,10,11,12])
+  const value = [1,2,3,4,5,6,7,8,9,10,11,12]
 
   useEffect(()=>{
     const interval = setInterval(()=>{
