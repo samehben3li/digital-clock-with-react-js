@@ -105,9 +105,15 @@ function App() {
 
   useEffect(()=>{
     setSeconde(new Date().getSeconds()/60)
-    setMinute((seconde+ new Date().getMinutes())/60)
-    setHour((minute + new Date().getHours())/12)
   },[currentDate])
+
+  useEffect(()=>{
+    setMinute((seconde+ new Date().getMinutes())/60)
+  },[seconde])
+
+  useEffect(()=>{
+    setHour((minute + new Date().getHours())/12)
+  },[minute])
 
   return (
     <Container>
